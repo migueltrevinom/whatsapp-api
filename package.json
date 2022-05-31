@@ -1,0 +1,31 @@
+{
+    "name": "verifik",
+    "version": "1.0.0",
+    "dependencies": {
+        "async": "^2.6.3",
+        "axios": "^0.21.1",
+        "crypto": "^1.0.1",
+        "cryptr": "^6.0.1",
+        "dotenv": "^5.0.1",
+        "express": "^4.17.1",
+        "request": "^2.88.0",
+        "restify": "^8.5.0",
+        "restify-clients": "^2.6.6",
+        "restify-errors": "^6.0.0",
+        "restify-plugins": "^1.6.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.16"
+    },
+    "scripts": {
+        "start:nodemon": "nodemon --inspect=0.0.0.0:6969 server.js -L --nolazy",
+        "test:watch": "node --inspect=0.0.0.0 ./node_modules/.bin/jest --watch --runInBand --verbose",
+        "test": "jest"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "bin": {
+        "mat-cli": "mat-cli.js"
+    }
+}
